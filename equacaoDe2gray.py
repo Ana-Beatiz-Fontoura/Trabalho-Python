@@ -1,11 +1,11 @@
-a = input('Coloque o valor de a: ')
-a = float(a)
+a = complex(input('Coloque o valor de a: '))
 
-b = input('Coloque o valor de b: ')
-b = float(b)
 
-c = input('coloque o valor de c: ')
-c = float(c)
+b = complex(input('Coloque o valor de b: '))
+
+
+c = complex(input('coloque o valor de c: '))
+
 
 delta = b**2 - (4*a*c)
 print(delta)
