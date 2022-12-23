@@ -1,0 +1,25 @@
+import requests
+
+from tkinter import *    #interface grafica (* = tudo)
+
+P = input("Digite a distância do objeto ao espelho:")  #dist.objeto
+p = input("Digite a distância da imagem ao espelho:")  #dist.imagem
+
+
+def distancia_focal(): #Definindo a função
+    f = (p*P)/(P+p)
+
+
+
+janela = Tk()
+
+janela.title("Distância focal")
+
+texto_orientacao = Label(janela, text="Preencha as informações para obter o valor da distância focal")
+texto_orientacao.grid(column=0, row=0)
+
+
+botao = Button(janela, text= "Calcular a distância focal", comand=distancia_focal)
+botao.grid(column=0, row= 3)
+
+janela.mainloop()
